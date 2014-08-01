@@ -1,0 +1,27 @@
+body {
+	background: black;
+}
+
+#templates {
+	display: none;
+}
+
+.row {
+	width: 100%;
+	display: block;
+}
+
+.col {
+	width: 49%;
+	display: inline-block;
+	height: 100%;
+}
+
+.bodywrap {
+	width: 1000px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background: white;
+}
+

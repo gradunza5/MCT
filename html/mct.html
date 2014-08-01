@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pathfinder Mass Combat Tool</title>
+
+		<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="../js/mct.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="../css/mct.css">
+	</head>
+	<body>
+		<div class="bodywrap">
+			<div class="inputs row">
+				<div id="attacker" class="col">
+					<h1>Attacker</h1>
+				</div>
+				<div id="defender" class="col">
+					<h1>Defender</h1>
+				</div>
+			</div>
+			<div class="outputs row">
+				<input value="Go!" type="button" onclick="setup();" />
+			</div>
+		</div>
+		<div id="templates">
+			<div id="colTemplate">
+				<div class="row">
+					<label>Enter Challenge Rating:</label>
+					<input class="crInput" type="text" />
+				</div>
+
+				<div class="row">
+					<label>Enter Army Size:</label>
+					<input class="sizeInput" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
