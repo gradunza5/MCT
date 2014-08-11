@@ -12,10 +12,11 @@ body {
 }
 
 .col {
-	width: 49%;
+	width: 497px;
 	display: inline-block;
 	height: 100%;
 	border-right: 1px solid gray;
+	vertical-align: top;
 }
 
 .bodywrap {
@@ -26,17 +27,49 @@ body {
 	background: white;
 }
 
-.stats {
-	border-top: 1px solid gray;
-}
-
 .stats label {
 	display: inline-block;
 	font-weight: bold;
+	width: 30%;
 }
 
 .stats .value {
 	display: inline-block;
 }
 
+.statsleft, .statsright {
+	display: inline-block;
+	vertical-align: top;
+}
 
+.statsleft {
+	width: 30%;
+}
+
+.statsright {
+	width: 65%;
+}
+
+.miscWrapper {
+	border: 1px solid gray;
+}
+
+.subrow {
+	width: 75%;
+	display: inline-block;
+}
+
+.modButton {
+	vertical-align: top;
+	width: 20%;
+}
+
+.goContainer {
+	padding: 15px 0;
+}
+
+.goContainer input {
+	width: 50px;
+	margin: 0 auto;
+	display: block;
+}

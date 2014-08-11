@@ -19,7 +19,7 @@
 				</div>
 			</div>
 			<div class="goContainer row">
-				<input value="Go!" type="button" onclick="setup();" />
+				<input value="Fight!" type="button" onclick="setup();" />
 			</div>
 		</div>
 		<div id="templates">
@@ -54,40 +54,49 @@
 					</select>
 				</div>
 				<div class="row conditionRow">
-					<input type="button" value="Add Condition" onClick="addCondition(this);" />
+					<input class="modButton" type="button" value="Add Condition" onClick="addCondition(this);" />
 					<div class="subrow"></div>
 				</div>
 				<div class="row tacticsRow">
-					<input type="button" value="Add Tactic" onClick="addTactic(this);" />
+					<input class="modButton" type="button" value="Add Tactic" onClick="addTactic(this);" />
 					<div class="subrow"></div>
 				</div>
 				<div class="row strategyRow">
-					<input type="button" value="Add Strategy" onClick="addStrategy(this);" />
+					<input class="modButton" type="button" value="Add Strategy" onClick="addStrategy(this);" />
 					<div class="subrow"></div>
 				</div>
 				<div class="row stats">
-					<h2>Stats</h2>
-					<div class="ACRRow row">
-						<label class="label">ACR:</label>
-						<div class="value"></div>
+					<div class="statsleft">
+						<h2>Stats</h2>
+						<div class="ACRRow row">
+							<label class="label">ACR:</label>
+							<div class="value"></div>
+						</div>
+						<div class="HPRow row">
+							<label class="label">HP:</label>
+							<div class="value"></div>
+						</div>
+						<div class="DVRow row">
+							<label class="label">DV:</label>
+							<div class="value"></div>
+						</div>
+						<div class="OVRow row">
+							<label class="label">OV:</label>
+							<div class="value"></div>
+						</div>
 					</div>
-					<div class="HPRow row">
-						<label class="label">HP:</label>
-						<div class="value"></div>
-					</div>
-					<div class="DVRow row">
-						<label class="label">DV:</label>
-						<div class="value"></div>
-					</div>
-					<div class="OVRow row">
-						<label class="label">OV:</label>
-						<div class="value"></div>
+					<div class="statsright">
+						<h2>Modifiers</h2>
+						<div class="miscWrapper">
+							<ul class="miscList">
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div id="condTemplate">
-				<div class="condition">
-					<select="condChoice">
+				<div class="conditions">
+					<select class="condChoice">
 						<option value="1">Fortifications</option>
 						<option value="2">Advantageous Terrain</option>
 					</select>

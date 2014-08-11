@@ -25,26 +25,73 @@ function setup() {
 		col.find(".HPRow .value").text(hp);
 
 		// calculate and set dv
-		
+		var dv = acr + 10;
+		col.find(".DVRow .value").text(dv);
 
 		// set ov
 		col.find(".OVRow .value").text(acr);
+
+		// calculate modifiers
 	});
 }
 
 function addCondition(caller) {
 	var container = caller.parentNode;
+	container = $(container).find(".subrow");
 	$(container).append($("#templates #condTemplate").html());
 }
 
 function addTactic(caller) {
 	var container = caller.parentNode;
+	container = $(container).find(".subrow");
 	$(container).append($("#templates #tacticTemplate").html());
 }
 
 function addStrategy(caller) {
 	var container = caller.parentNode;
+	container = $(container).find(".subrow");
 	$(container).append($("#templates #strategyTemplate").html());
+}
+
+function getCondMod(condition) {
+	switch (condition) {
+		case "1": // Fortifications
+			// +16 DV
+			break;
+		case "2": // Advantageous Terrain
+			// +2 DV
+			break;
+		default:
+	}
+}
+
+function gettacticMod(tactic) {
+	switch (tactic) {
+		case "1": // Defensive Wall
+			// -2 OM, +2 DV
+			break;
+		case "2": // relentless brutality
+			// +4 OM, -4 DV
+			break;
+		default:
+	}
+}
+
+function getStratMod(strategy) {
+	switch (strategy) {
+		case "1": // defensive
+			break;
+		case "2": // cautious
+			break;
+		case "3": // standard
+			break;
+		case "4": // aggressive
+			break;
+		case "5": // reckless
+			break;
+		default: 
+	}
+
 }
 
 function getCRMod(size) {
@@ -80,5 +127,6 @@ function getCRMod(size) {
 			break;
 		default:
 			out = 0;
-	} return out;
+	}
+	return out;
 }
