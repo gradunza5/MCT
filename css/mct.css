@@ -11,12 +11,16 @@ body {
 	display: block;
 }
 
+.col:first-child {
+	border-right: 1px solid gray;
+}
+
 .col {
-	width: 497px;
+	width: 47%;
 	display: inline-block;
 	height: 100%;
-	border-right: 1px solid gray;
 	vertical-align: top;
+    padding-left: 20px;
 }
 
 .bodywrap {
@@ -61,21 +65,21 @@ body {
 }
 
 .subrow {
-	width: 75%;
+	width: 65%;
 	display: inline-block;
 }
 
 .modButton {
 	vertical-align: top;
-	width: 20%;
+	width: 30%;
 }
 
 .goContainer {
 	padding: 15px 0;
+    margin-left: -10px;
 }
 
 .goContainer input {
-	width: 50px;
 	margin: 0 auto;
 	display: block;
 }
